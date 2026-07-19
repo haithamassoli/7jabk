@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Aref_Ruqaa } from "next/font/google";
 import { thmanyahSans } from "@/fonts";
+import InstallPrompt from "./install-prompt";
 import "./globals.css";
 
 const arefRuqaa = Aref_Ruqaa({
@@ -22,6 +23,12 @@ export const metadata: Metadata = {
     locale: "ar_JO",
     siteName: "حجابك",
   },
+  applicationName: "حجابك",
+  appleWebApp: {
+    capable: true,
+    title: "حجابك",
+    statusBarStyle: "default",
+  },
 };
 
 export const viewport: Viewport = {
@@ -42,6 +49,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-background font-sans text-foreground">
         {children}
+        <InstallPrompt />
       </body>
     </html>
   );

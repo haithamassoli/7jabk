@@ -319,9 +319,18 @@ export default function Home() {
         <div className={`${CONTAINER} flex h-18 items-center justify-between gap-4`}>
           <a
             href="#main"
-            className="rounded-sm font-display text-3xl font-bold leading-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+            aria-label="حجابك — الصفحة الرئيسية"
+            className="flex items-center gap-2.5 rounded-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
           >
-            حجابك
+            <img
+              src="/logo.png"
+              alt=""
+              aria-hidden
+              width={351}
+              height={356}
+              className="h-11 w-auto"
+            />
+            <span className="font-display text-3xl font-bold leading-none">حجابك</span>
           </a>
           <nav aria-label="أقسام الصفحة" className="hidden items-center gap-7 text-sm font-medium text-espresso/75 md:flex">
             <a href="#collection" className="rounded-sm py-1.5 transition-colors hover:text-olive-deep focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none">
