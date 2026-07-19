@@ -12,6 +12,7 @@ const arefRuqaa = Aref_Ruqaa({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://7jabk.assoli.site"),
   title: "حجابك — خُمُر وحجابات بسِترٍ يليق بكِ",
   description:
     "مشغل أردني للخُمُر والطُرَح والنُقُب والعبايات من أجود الأقمشة الكورية والتركية. اطلبي عبر واتساب، والدفع عند الاستلام مع توصيل لكل محافظات الأردن.",
